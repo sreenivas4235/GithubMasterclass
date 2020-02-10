@@ -2,7 +2,7 @@
   <head>
     <title>Chips</title>
     <script>
-      document.write("Chips on road");
+      document.write("Chips on road<br/>");
       document.write("prime 9");
       function handleOnSubmitFunction(){
         var n = document.myform.name.value;
@@ -15,10 +15,10 @@
   </head>
   <body>
     <h1>Welcome to chips shop!</h1>
-    <form name="myform">
+    <form name="myform" onsubmit="handleOnSubmitFunction()">
       Name: <input type="text" name="name"/><br/>
-      Pass: <input type="password" name="pass><br/>
-        <input type="submit" value="submit" onsubmit="handleOnSubmitFunction()");
+      Pass: <input type="password" name="pass"/><br/>
+     <input type="submit" value="submit"/>
     </form>
   </body>
 </html>
